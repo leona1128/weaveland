@@ -1,0 +1,102 @@
+.section{
+    background-color:#fbf6e9;
+    margin: auto;
+}
+.section-login{
+    background-image: url(../pic/會員登入.png) ;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+.container-login{
+    padding: 250px 0;
+    margin: auto;
+}
+.login-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.title-login{
+    position: relative;
+}
+.title-login:after{
+    content: '';
+    position: absolute;
+    height: 4px;
+    width: 800px;
+    background-color:  #6c3333;
+    right: 0;
+    left: -330px;
+    bottom: 0;
+}
+.title-login h1{
+    font-family: 'Noto Sans TC';
+    color: #4a2222;
+    font-size: 40px;
+    padding-bottom: 34px;
+}
+.account-login{
+    margin: 86px 0 16px 0;
+    color: #6c3333;
+    font-size: 20px;
+    letter-spacing: 23%;
+    font-family: 'Noto Sans TC';
+}
+.password-login{
+    color: #6c3333;
+    font-size: 20px;
+    letter-spacing: 23%;
+    margin-bottom: 138px;
+    font-family: 'Noto Sans TC';
+}
+.account-login input[type="text"]{
+    text-align: center;
+    color: #6c3333;
+    background-color: #fbf6e9;
+    widows: 158px;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+}
+.password-login input[type="text"]{
+    text-align: center;
+    color: #6c3333;
+    background-color: #fbf6e9;
+    widows: 158px;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+}
+
+.bottom-login{
+    display: flex;
+    color: #6c3333;
+    font-family: 'Noto Sans TC';
+    font-size: 18px;
+}
+.bottom-login a{
+    font-size: 18px;
+    padding-left: 5px;
+    margin-bottom: 76px;
+    text-decoration: none;
+    color: #6c3333;
+    font-family: 'Noto Sans TC';
+}
+.footer-login{
+    background-color: #fbf6e9;
+    border: none;
+    border-radius: 10px;
+    transition:0.3s;
+}
+.footer-login:hover{
+    transform: scale(1.1);
+    background-color: #873535;
+}
+.footer-login a{
+    text-decoration: none;
+    color: #6c3333;
+    font-family: 'Noto Sans TC';
+    font-size: 24px;
+    padding: 21px 40px;
+}

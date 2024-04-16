@@ -1,0 +1,40 @@
+.section-banner{
+    margin-top: 50px ;
+}
+.section-banner img{
+    width: 100%;
+    vertical-align: middle;
+}
+.section{
+    padding: 30px 0;
+}
+.section-about{
+    background-color:#fbf6e9;
+    background-image: url(../pic/background\ image5.png) ;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.container-about{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.container-about h1{
+    font-family: 'Noto Sans TC';
+    color: #6c3333;
+    margin-bottom: 70px;
+    font-size: 40px;
+    letter-spacing: 14%;
+    padding-top:100px ;
+    text-align: center;
+}
+.container-about p{
+    font-family: 'Noto Sans TC';
+    color: #803f3f;
+    font-size: 20px;
+    letter-spacing: 3px;
+    line-height: 35px;
+    padding-bottom: 273px;
+    text-align: left;
+}

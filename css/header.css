@@ -1,0 +1,158 @@
+
+.section-banner{
+    margin-top: 50px ;
+}
+.section-banner img{
+    width: 100%;
+    vertical-align: middle;
+}
+.section{
+    padding: 95px 0;
+
+}
+.section-about{
+    background-color:#f2e7cb;
+    background-image: url(pic/background\ image5.png) ;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.pic-about img{
+    width: 100%;
+}
+.txt-about{
+    padding-top: 82px;
+    text-align: center;
+    width: 777px;
+    flex-wrap: wrap;
+    margin: auto;
+    
+}
+.txt-about p{
+    text-align: left;
+    letter-spacing: 12%;
+    line-height: 30px;
+    font-size: 20px;
+    font-family: 'Noto Sans TC';
+    color: #6c3333;
+}
+.container-produt{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container-produt h2{
+    color: #4a2222;
+    margin-bottom: 55px;
+    font-size: 40px;
+}
+.card-list{
+    display: flex;
+    gap: 90px;
+    justify-content: space-between;
+}
+.card{
+    position: relative;
+}
+.pic-card img{
+    width: 100%;
+    vertical-align: middle;
+    object-fit: cover;
+    
+}
+.txt-card{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .8);
+}
+.txt-card{
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    line-height: 41px;
+    letter-spacing: 12%;
+    font-size: 15px;
+    font-family: 'Noto Sans TC';
+    opacity: 0;
+    transition: 0.5s;
+}
+.txt-card h3{
+    word-spacing:10px
+}
+.card:hover .txt-card{
+    opacity: 1;
+}
+.more{
+    background-color: #85540a;
+    margin-top: 77px;
+    padding:5px 60px;
+    border-radius: 5px;
+    border: 0;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 14%);
+    transition: transform 0.3s ease;
+}
+.more:hover{
+    transform: scale(1.1);
+    background-color: #873535;
+    
+}
+.more a:hover{
+    font-weight: bold;
+} 
+.more a{
+    color: #fff;
+    text-decoration: none;
+    font-family: "Arima";
+    font-size: 28px; 
+    letter-spacing: 7px;
+    
+}
+.section-product-banner img{
+    width: 100%;
+}
+.list-class{
+    margin: 0 -15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.class{
+    display: flex;
+}
+.section-class{
+    background-color: #f2e7cb;
+}
+.list-class h3{
+    text-align: center;
+    color: #4a2222;
+    font-family: 'Noto Sans TC';
+    font-size: 40px;
+    letter-spacing: 18%;
+    margin-bottom: 80px;
+}
+.list-class .class:nth-child(odd){
+    flex-direction: row-reverse;
+}
+.txt-class{
+    background-color: #dfd0a9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 85px;
+}
+.txt-class section{
+    font-family: 'Noto Sans TC';
+    color: #6c3333;
+    line-height: 30px;
+    letter-spacing: 12%;
+    word-spacing: 30px;
+}
+
+.list-class .more{
+    margin-top: 75px;
+}

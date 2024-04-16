@@ -1,0 +1,91 @@
+.section{
+    background-color:#fbf6e9;
+    margin: auto;
+}
+.section-product{
+    background-image: url(pic/background\ image7.png) ;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+.container-product{
+    padding: 100px 20px;
+    margin: auto;
+}
+.title-product h1{
+    font-family: 'Noto Sans TC';
+    color: #4a2222;
+    font-size: 40px;
+    letter-spacing: 12%;
+    margin: 30px;
+}
+.card{
+    background-color: #faf9d8;
+    border-radius: 0 10px 10px 10px;
+    margin-right: 40px;
+    margin-left: 40px;
+    margin-bottom: 100px;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 14%);
+    transition: transform 0.3s ease;
+}
+.card:hover{
+    transform: scale(1.1); 
+}
+.pic-card img{
+    width: 100%;
+    object-fit: cover;
+}
+.bottom-card{
+    padding:13px 0;
+}
+.bottom-card .title{
+    display: flex;
+    flex-direction: column;
+}
+.bottom-card .title h2{
+    font-size: 16px;
+    letter-spacing: 20%;
+    margin: 0 15px;
+    word-spacing: 3px;
+    color: #6c3333;
+    font-family: 'Noto Sans TC';
+}
+.bottom-card .title span{
+    font-size: 14px;
+    flex-wrap: nowrap;
+    letter-spacing: 9%;
+    color: #6c3333;
+    font-family: 'Noto Sans TC';
+    margin: 5px 15px;
+
+}
+.bottom-card {
+    display: flex;
+    justify-content: space-between;
+}
+.bottom-card .price{
+    padding-right: 15px;
+    font-family: 'Noto Sans TC';
+    font-size: 16px;
+    letter-spacing: 20%;
+    color: #6c3333;
+}
+.buttom-product{
+    display: flex;
+    justify-content: center;
+    
+}
+.buttom-product li:hover{
+    transform: scale(1.1); 
+}
+.buttom-product a{
+    text-decoration: none;
+    margin: 35px;
+    background-color: #f2e7cb;
+    font-size: 18px;
+    padding: 10px 15px;
+    border-radius: 100%;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 14%);
+    color: black;
+    transition: transform 0.3s ease;
+}

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         * {
+            margin: 0;
+            padding: 0;
+        }
+        .item-list {
+            width: 960px;
+            height: 400px;
+            margin: auto;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            counter-reset:num;
+        }
+        .item {
+            width: 420px;
+            margin: 10px;
+            position: relative;
+            padding-left: 40px;
+        }
+        .item a {
+            color: #666;
+            text-decoration: none;
+        }
+        .item::before {
+            content: '1';
+            position: absolute;
+            left: 0;
+            top: 0;
+            font-size: 52px;
+            counter-increment:num; 
+            content:counter(num);
+        }
+        .item::after {
+            content: '';
+            position: absolute;
+            height: 2px;
+            background-color: #f00;
+            right: 0;
+            left: 60px;
+            bottom: -10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="item-list">
+        <div class="item">
+            <div class="hashtag">
+                <span>培訓案例</span>
+                <span>學員心得</span>    
+            </div>
+            <a href="#">【學員見證】老師用心教學，微軟AZ-104認證考試練習不間斷！</a>
+        </div>
+        <div class="item">
+            <div class="hashtag">
+                <span>培訓案例</span>
+                <span>學員心得</span>    
+            </div>
+            <a href="#">【學員見證】老師用心教學，微軟AZ-104認證考試練習不間斷！</a>
+        </div>
+        <div class="item">
+            <div class="hashtag">
+                <span>培訓案例</span>
+                <span>學員心得</span>    
+            </div>
+            <a href="#">【學員見證】老師用心教學，微軟AZ-104認證考試練習不間斷！</a>
+        </div>
+        <div class="item">
+            <div class="hashtag">
+                <span>培訓案例</span>
+                <span>學員心得</span>    
+            </div>
+            <a href="#">【學員見證】老師用心教學，微軟AZ-104認證考試練習不間斷！</a>
+        </div>
+        <div class="item">
+            <div class="hashtag">
+                <span>培訓案例</span>
+                <span>學員心得</span>    
+            </div>
+            <a href="#">【學員見證】老師用心教學，微軟AZ-104認證考試練習不間斷！</a>
+        </div>
+        <div class="item">
+            <div class="hashtag">
+                <span>培訓案例</span>
+                <span>學員心得</span>    
+            </div>
+            <a href="#">【學員見證】老師用心教學，微軟AZ-104認證考試練習不間斷！</a>
+        </div>
+        <div class="item">
+            <div class="hashtag">
+                <span>培訓案例</span>
+                <span>學員心得</span>    
+            </div>
+            <a href="#">【學員見證】老師用心教學，微軟AZ-104認證考試練習不間斷！</a>
+        </div>
+        <div class="item">
+            <div class="hashtag">
+                <span>培訓案例</span>
+                <span>學員心得</span>    
+            </div>
+            <a href="#">【學員見證】老師用心教學，微軟AZ-104認證考試練習不間斷！</a>
+        </div>
+    </div>
+
+</body>
+</html>

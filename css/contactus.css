@@ -1,0 +1,54 @@
+.section{
+    background-color:#fbf6e9;
+    padding: 100px 0;
+}
+.container-contactus{
+    margin-top: 100px;
+    background-color: #f2e7cb;
+    border-radius: 80px;
+    width: 900px;
+    padding-bottom: 80px;
+}
+.title{
+    text-align: center;
+    font-family: 'Noto Sans TC';
+    color: #6c3333;
+    font-size: 40px;
+    letter-spacing: 12%;
+    margin-bottom: 48px;
+    padding: 52px;
+}
+.list-contactus{
+    text-align: center;
+    padding: 0 55px;
+}
+.title-card-contactus{
+    text-align: left;
+    font-family: 'Noto Sans TC';
+    color: #6c3333;
+    font-size: 20px;
+    letter-spacing: 12%;
+    position: relative;
+    margin: 55px 0;
+}
+.title-card-contactus::after{
+    content: '';
+    position: absolute;
+    height: 1.5px;
+    width: 95%;
+    background-color:  #6c3333;
+    right: 0;
+    left: 0px;
+    bottom: -15px;
+}
+.txt-card-contactus{
+    text-align: left;
+    margin: 0 50px;
+    font-family: 'Noto Sans TC';
+    color: #6c3333;
+    font-size: 16px;
+}
+.txt-card-contactus li{
+    margin: 20px;
+    line-height: 25px;
+}
