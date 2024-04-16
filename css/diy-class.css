@@ -5,6 +5,7 @@
 .container-diy-introduce{
     padding-top: 150px;
     padding-bottom: 200px;
+    width: auto;
 }
 .container-diy-introduce h1{
     font-family: 'Noto Sans TC';
@@ -95,8 +96,10 @@
 .card-diy-class:nth-child(1){
     position: relative;
     right: 80px;
+   
 }
 .card-diy-class:nth-child(2){
     position: relative;
-    left: 80px;
+    left: 100px;
+   
 }
