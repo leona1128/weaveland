@@ -88,14 +88,17 @@
 .number input[type="number"]{
     text-align: center;
     color: #6c3333;
+    border-radius:5px ;
 }
 .function-product-content input[type="date"]{
     width: 300px;
     height: 42px;
     text-align: center;
+    border-radius:5px ;
 }
 .function-product-content input[type="time"]{
     width: 300px;
     height: 42px;
     text-align: center;
+    border-radius:5px ;
 }

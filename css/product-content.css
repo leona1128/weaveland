@@ -81,6 +81,7 @@
 .number input[type="number"]{
     text-align: center;
     color: #6c3333;
+    border-radius:5px ;
 }
 .cart-button{
     background-color: #fbf6e9;
@@ -92,4 +93,5 @@
     font-family: 'Noto Sans TC';
     font-size: 20px;
     letter-spacing: 12%;
+    border-radius:5px ;
 }
