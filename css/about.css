@@ -24,15 +24,15 @@
     font-family: 'Noto Sans TC';
     color: #6c3333;
     margin-bottom: 70px;
-    font-size: 40px;
+    font-size: 18px;
     letter-spacing: 14%;
-    padding-top:100px ;
+    padding-top:80px ;
     text-align: center;
 }
 .container-about p{
     font-family: 'Noto Sans TC';
     color: #803f3f;
-    font-size: 20px;
+    font-size: 16px;
     letter-spacing: 3px;
     line-height: 35px;
     padding-bottom: 273px;
