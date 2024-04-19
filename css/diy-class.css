@@ -4,18 +4,18 @@
 }
 .container-diy-introduce{
     padding-top: 150px;
-    padding-bottom: 200px;
-    width: auto;
+    padding-bottom: 100px;
+    margin: auto;
 }
 .container-diy-introduce h1{
     font-family: 'Noto Sans TC';
     color: #4a2222;
-    font-size: 40px;
+    font-size: 18px;
     letter-spacing: 14%;
     text-align: center;
 }
 .list-diy-introduce{
-    width: 900px;
+    width: 75%;
     margin: auto;
 }
 .txt-card-diy-introduce{
@@ -24,24 +24,32 @@
     line-height: 30px;
     letter-spacing: 12%;
     text-align: left;
-    padding:77px 97px ;
+    padding:77px 0 ;
+    width: 66.666666%;
+    font-size: 12PX;
+    margin: auto;
+}
+.pic-card-diy-introduce{
+    width: 66.666666%;
+    margin: auto;
 }
 .pic-card-diy-introduce img{
     width: 100%;
-    border-radius: 50px;
 }
 .section-diy-class{
     background-color: #f2e7cb;
-    padding: 78px 0;
+    padding: 50px 0;
 }
-.container-diy-class{
-    width: 1100px;
-}
+/* .container-diy-class{
+    width: 100%;
+} */
 .card-diy-class{
     background-color: #e1d1a6;
     display: flex;
-    margin-top: 118px;
+    margin-top: 70px;
     border-radius: 50px;
+    overflow: hidden;
+    width: 92.5%;
 }
 .pic-card-diy-class img{
     width: 100%;
@@ -61,7 +69,7 @@
     line-height: 24px;
     letter-spacing: 12%;
     text-align: center;
-    font-size: 24px;
+    font-size: 18px;
 }
 .category-card-diy-class{
     font-family: 'Noto Sans TC';
@@ -71,11 +79,11 @@
     line-height: 30px;
     padding-top: 36px;
     flex-grow: 1; 
-    font-size: 18px; 
+    font-size: 12px; 
 }
 .button-card-diy-class{
     width: 150px;
-    height: 52px;
+    height: 35px;
     background-color: #85540a;
     border-radius: 5px;
     border: none;
@@ -91,13 +99,14 @@
     text-decoration: none;
     color: #fff;;
     font-family: 'Noto Sans TC';
-    font-size: 24px;
+    font-size: 18px;
 }
 .card-diy-class:nth-child(1){
     position: relative;
-    right: 80px;
+    right: 20px;
 }
 .card-diy-class:nth-child(2){
     position: relative;
     left: 100px;
+    overflow: hidden;
 }

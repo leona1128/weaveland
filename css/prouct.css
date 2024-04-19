@@ -11,22 +11,22 @@
 .container-product{
     padding: 100px 20px;
     margin: auto;
+    width: 66.666666%;
 }
 .title-product h1{
     font-family: 'Noto Sans TC';
     color: #4a2222;
-    font-size: 40px;
+    font-size: 18px;
     letter-spacing: 12%;
     margin: 30px;
 }
 .card{
-    background-color: #faf9d8;
+    background-color: #ECEAA9;
     border-radius: 0 10px 10px 10px;
-    margin-right: 40px;
-    margin-left: 40px;
+    gap: 10PX;
     margin-bottom: 100px;
-    box-shadow: 1px 1px 2px rgba(0, 0, 0, 14%);
     transition: transform 0.3s ease;
+    
 }
 .card:hover{
     transform: scale(1.1); 
@@ -43,7 +43,7 @@
     flex-direction: column;
 }
 .bottom-card .title h2{
-    font-size: 16px;
+    font-size: 14px;
     letter-spacing: 20%;
     margin: 0 15px;
     word-spacing: 3px;
@@ -80,10 +80,10 @@
 }
 .buttom-product a{
     text-decoration: none;
-    margin: 35px;
+    margin: 10px;
     background-color: #f2e7cb;
-    font-size: 18px;
-    padding: 10px 15px;
+    font-size: 12px;
+    padding: 10px 13px;
     border-radius: 100%;
     box-shadow: 1px 1px 2px rgba(0, 0, 0, 14%);
     color: black;
