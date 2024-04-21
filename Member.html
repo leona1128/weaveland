@@ -90,27 +90,56 @@
                 <div class="title-member">
                     <h1>購物車</h1>
                 </div>
-                <div class="card-member">
-                    <div class="commodity-member">
-                        <h2>商品:</h2>
+                <ul class="txt-member">
+                    <li>
+                        商品
+                    </li>
+                    <li>
+                        數量
+                    </li>
+                    <li>
+                        價格
+                    </li>
+                </ul>
+                <main class="list-card-member">
+                    <div class="card-member">
+                        <picture class="pic-member">
+                            <img src="pic/index-flower3.jpg" alt="">
+                        </picture>
+                        <div class="commodity-member">
+                            <h2>百合花</h2>
+                            <span>Lily</span>
+                        </div>
+                        <form id='myform' class="number-member" method='POST' action='#'>
+                            <input type='button' value='-' class='qtyminus' field='quantity' />
+                            <input type='number' name='quantity' value='0' class='qty' - --><input type='button'
+                                value='+' class='qtyplus' field='quantity' />
+                        </form>
+                        <div class="price-member">
+                            <h3>NT.1600</h3>
+                        </div>
                     </div>
-                    <div class="pic-member">
-                        <img src="pic/index-flower3.jpg" alt="">
+                    <div class="card-member">
+                        <picture class="pic-member">
+                            <img src="pic/index-flower2.jpg" alt="">
+                        </picture>
+                        <div class="commodity-member">
+                            <h2>木槿花</h2>
+                            <span>Crochet Gumamela</span>
+                        </div>
+                        <form id='myform' class="number-member" method='POST' action='#'>
+                            <input type='button' value='-' class='qtyminus' field='quantity' />
+                            <input type='number' name='quantity' value='0' class='qty' - --><input type='button'
+                                value='+' class='qtyplus' field='quantity' />
+                        </form>
+                        <div class="price-member">
+                            <h3>NT.1800</h3>
+                        </div>
                     </div>
-                    <div class="num-member">
-                        <label>
-                            數量: <input type="number">
-                        </label>
-                    </div>
-                    <div class="trash-member">
-                        <i class="fa-regular fa-trash-can"></i>
-                    </div>
-                    <span class="price-member">價格:</span>
-                </div>
+                </main>
                 <div class="bottom-member">
-                    <p>總計</p>
-                    <p>數量:</p>
-                    <p>金額:</p>
+                    <h3>總計:</h3>
+                    <span>NT.3400</span>
                 </div>
                 <button class="button-member">
                     <a href="#">開始結帳</a>
