@@ -6,7 +6,7 @@
     margin-top: 100px;
     background-color: #f2e7cb;
     border-radius: 80px;
-    width: 900px;
+    width: 75%;
     padding-bottom: 80px;
 }
 .title{
@@ -51,4 +51,29 @@
 .txt-card-contactus li{
     margin: 20px;
     line-height: 25px;
+}
+@media screen and (max-width:767px){
+    .section{
+        padding:10px 0;
+    }
+    .container-contactus{
+        background-color: transparent;
+        width: auto;
+        margin-top: 40px;
+        padding-bottom: 40px;
+    }
+    .title{
+        font-size: 14px;
+    }
+    .list-contactus{
+        text-align: center;
+        padding: 0 10px;
+    }
+    .title-card-contactus{
+        font-size: 12px;
+        margin: 0 30px;
+    }
+    .txt-card-contactus{
+        font-size: 10px;
+    }
 }
