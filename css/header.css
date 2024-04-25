@@ -284,6 +284,10 @@
         transition: none;
         color: #6c3333;
     }
+    .txt-class section{
+        margin-top: 15px;
+        line-height: 15px;
+    }
 
     .section-class {
         background-color: #dfd0a9;
