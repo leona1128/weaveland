@@ -1,13 +1,14 @@
-
-.section-banner{
-    margin-top: 50px ;
+.section-banner {
+    margin-top: 50px;
     position: relative;
 }
-.section-banner img{
+
+.section-banner img {
     width: 100%;
     vertical-align: middle;
 }
-.section-banner h1{
+
+.section-banner h1 {
     position: absolute;
     top: 300px;
     left: 300px;
@@ -16,23 +17,28 @@
     font-size: 18px;
     letter-spacing: 20px;
 }
-.section{
+
+.section {
     padding: 95px 0;
 
 }
-.section-about{
-    background-color:#f2e7cb;
-    background-image: url(pic/background\ image5.png) ;
+
+.section-about {
+    background-color: #f2e7cb;
+    background-image: url(pic/background\ image5.png);
     background-position: center;
     background-repeat: no-repeat;
 }
-.pic-about{
+
+.pic-about {
     position: relative;
 }
-.pic-about img{
+
+.pic-about img {
     width: 100%;
 }
-.pic-about h2{
+
+.pic-about h2 {
     position: absolute;
     top: 389px;
     left: 500px;
@@ -41,15 +47,17 @@
     font-size: 18px;
     letter-spacing: 20px;
 }
-.txt-about{
+
+.txt-about {
     padding-top: 82px;
     text-align: center;
     width: 777px;
     flex-wrap: wrap;
     margin: auto;
-    
+
 }
-.txt-about p{
+
+.txt-about p {
     text-align: left;
     letter-spacing: 12%;
     line-height: 30px;
@@ -57,34 +65,40 @@
     font-family: 'Noto Sans TC';
     color: #6c3333;
 }
-.container-produt{
+
+.container-produt {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.container-produt h2{
+
+.container-produt h2 {
     color: #4a2222;
     margin-bottom: 40px;
     font-size: 18px;
     font-family: 'Noto Sans TC';
 }
-.card-list{
+
+.card-list {
     display: flex;
     gap: 30px;
     justify-content: space-between;
 }
-.card{
+
+.card {
     position: relative;
-    width:300px;
+    width: 300px;
     margin: auto;
 }
-.pic-card img{
+
+.pic-card img {
     width: 100%;
     vertical-align: middle;
     object-fit: cover;
-    
+
 }
-.txt-card{
+
+.txt-card {
     position: absolute;
     top: 0;
     left: 0;
@@ -104,46 +118,55 @@
     opacity: 0;
     transition: 0.5s;
 }
-.txt-card h3{
-    word-spacing:10px;
+
+.txt-card h3 {
+    word-spacing: 10px;
     font-family: 'Noto Sans TC';
 }
-.card:hover .txt-card{
+
+.card:hover .txt-card {
     opacity: 1;
 }
-.more{
+
+.more {
     background-color: #85540a;
     margin-top: 77px;
-    padding:3px 25px;
+    padding: 3px 25px;
     border-radius: 5px;
     border: 0;
     box-shadow: 1px 1px 2px rgba(0, 0, 0, 14%);
     transition: transform 0.3s ease;
 }
-.more:hover{
+
+.more:hover {
     transform: scale(1.1);
     background-color: #873535;
-    
+
 }
-.more a:hover{
+
+.more a:hover {
     font-weight: bold;
-} 
-.more a{
+}
+
+.more a {
     color: #fff;
     text-decoration: none;
     font-family: "Arima";
-    font-size: 18px; 
+    font-size: 18px;
     letter-spacing: 7px;
 
-    
+
 }
-.section-product-banner{
+
+.section-product-banner {
     position: relative;
 }
-.section-product-banner img{
+
+.section-product-banner img {
     width: 100%;
 }
-.section-product-banner h2{
+
+.section-product-banner h2 {
     color: #fff;
     position: absolute;
     top: 160px;
@@ -152,20 +175,32 @@
     font-size: 18px;
     letter-spacing: 20px;
 }
-.list-class{
+
+.list-class {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.class{
+
+.class {
     display: flex;
     background-color: #dfd0a9;
     margin-top: 20px;
 }
-.section-class{
+
+.section-class {
     background-color: #f2e7cb;
 }
-.list-class h3{
+
+.pic-class img {
+    /* width: 100%; */
+}
+
+.pic-class {
+    width: 45.0325732%;
+}
+
+.list-class h3 {
     text-align: center;
     color: #4a2222;
     font-family: 'Noto Sans TC';
@@ -174,19 +209,20 @@
     margin-bottom: 80px;
 }
 
-
-.list-class .class:nth-child(odd){
+.list-class .class:nth-child(odd) {
     flex-direction: row-reverse;
     padding-top: 30px;
 }
-.txt-class{
-    
+
+.txt-class {
+    width: 54.641693%;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0 85px;
+    /* padding: 0 85px; */
 }
-.txt-class section{
+
+.txt-class section {
     font-family: 'Noto Sans TC';
     color: #6c3333;
     line-height: 30px;
@@ -195,25 +231,29 @@
     font-size: 16px;
 }
 
-.list-class .more{
+.list-class .more {
     margin-top: 75px;
 }
-@media screen and (max-width:767px){
-    .section-banner{
-        margin-top: 20px ;
+
+@media screen and (max-width:767px) {
+    .section-banner {
+        margin-top: 20px;
         position: relative;
     }
-    .section{
+
+    .section {
         padding: 25px 0;
-    
+
     }
-    .section-banner h1{
+
+    .section-banner h1 {
         top: 90px;
         left: 30px;
         font-size: 12px;
         letter-spacing: 10px;
     }
-    .pic-about h2{
+
+    .pic-about h2 {
         position: absolute;
         top: 250px;
         left: 300px;
@@ -222,43 +262,84 @@
         font-size: 14px;
         letter-spacing: 20px;
     }
-    .txt-about{
+
+    .txt-about {
         padding-top: 20px;
         width: 376px;
     }
-    .txt-about p{
+
+    .txt-about p {
         line-height: 20px;
         font-size: 9px;
     }
-    .txt-card{
+
+    .txt-card {
         position: relative;
         background-color: transparent;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        line-height:20px;
+        line-height: 20px;
         font-size: 12px;
         padding: 10px;
-        opacity:1;
+        opacity: 1;
         transition: none;
         color: #6c3333;
     }
-    .class{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        box-sizing: border-box;
+
+    .section-class {
+        background-color: #dfd0a9;
+        padding: 15px 0;
     }
-    .txt-class{
+
+    .class {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        box-sizing: border-box;
+        margin-top: 10px;
+    }
+
+    .list-class .class:nth-child(odd) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: auto;
+        padding-top: 0px;
+    }
+
+    .txt-class {
         padding: 0 5px;
         box-sizing: border-box;
     }
-    .txt-class section{
-    font-size: 10px;
+
+    .txt-class section {
+        font-size: 10px;
     }
-    .pic-class img{
+
+    .pic-class img {
         width: 437px;
-        height: 333px;
     }
+
     
+
 }
+
+/* @media screen and (max-width:339px){
+    .pic-class img{
+        width: 50px;
+        height:40px;
+        box-sizing: border-box;
+    }
+    .txt-about p{
+        line-height: 0px;
+
+    }
+    .txt-about{
+        padding-top: 20px;
+    }
+   
+
+} */
