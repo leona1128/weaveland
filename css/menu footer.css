@@ -1,120 +1,177 @@
-.section-all{
+.section-all {
     background-color: #FBF6E9;
 }
+
 /* 導覽列 */
-.logo-menu img{ 
-    width: 100px;
-}
-.section-menu{
-    background-color: #FBF6E9;
+.main-header {
+    display: flex;
     position: fixed;
-    top: 0;
+    background-color: #FBF6E9;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
     width: 100%;
+    top: 0;
+    left: 0;
     z-index: 1;
 }
-.menu{
-    display: flex;
-    align-items: center;
+
+.logo {
+    width: 100px;
 }
-.list-menu{
+
+.logo img {
+    width: 100%;
+}
+
+#menu-switch {
+    display: none;
+}
+
+.hb {
+    width: 20px;
+    height: 20px;
+    background-color: #FBF6E9;
     display: flex;
-   /* align-content: space-between; */
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    order: 1;
+}
+
+.hb span {
+    width: 15px;
+    height: 2px;
+    background-color: #653c13;
+}
+
+#menu-switch:checked~.main-header .main-nav {
+    display: block;
+}
+
+.main-nav {
+    position: absolute;
+    top: 100%;
+    width: 80%;
+    height: 100vh;
+    background-color: #FBF6E9;
+    display: none;
+}
+
+.main-menu>li {
+    display: flex;
+    flex-wrap: wrap;
+    display: block;
+    padding: 40px 0;
+    text-align: center;
     
 }
-.list-menu li{
-    margin: 0 20px;
-    position: relative;
-}
-.list-menu a{
+
+.main-menu>li a {
+    width: 0;
+    flex-grow: 1;
     text-decoration: none;
-    display: block;
-    color: #653c13;
-    padding: 10px;
-    font-size: 16px;
-    font-family: 'Noto Sans TC';
-}
-.submenu{
-    max-width: 400px;
-    position: absolute;
-    white-space: nowrap;
-    left: 50%;
-    transform: translateX(-50%);
-    top: 100%;
     font-size: 24px;
-    background-color:#FBF6E9 ;
-    text-align: center;
-    display: none;
-    padding: 20px 0;
+    font-family: 'Noto Sans TC';
+    color: #653c13;
 
 }
-.submenu a{
-    padding: 15px;
-}
-li:hover .submenu{
+
+.main-menu>li label:has(input:checked)+.sub-menu {
     display: block;
 }
-.icon-menu{
+
+.main-menu > li label:has( input:checked) {
+    scale: 1 -1;
+}
+.main-menu>li label>input {
+    display: none;
+}
+
+.sub-menu {
+    display: none;
+    width: 100%;
+    padding: 10px 0;
+}
+.sub-menu li{
+    padding: 10px 0;
+}
+.sub-menu>li a{
+    font-size: 16px;
+    color: #6c3333;
+}
+.icon-menu {
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-left: auto;
 }
-.icon-menu label{
+
+.icon-menu label {
     display: inline-block;
-    background-color:#FBF6E9 ;
+    background-color: #FBF6E9;
     border: 1px solid #653c13;
     border-radius: 5px;
     padding: 3px 5px;
 }
-.icon-menu input{
-    width: 146px;
-    background-color:transparent ;
+
+.icon-menu input {
+    width: 30px;
+    background-color: transparent;
     border: 0;
 }
-.icon-menu .fa-magnifying-glass{
+
+.icon-menu .fa-magnifying-glass {
     border: none;
     right: 10px;
-    color:#91918e;
+    color: #91918e;
 }
-.icon-menu .fa-user-large{
+
+.icon-menu .fa-user-large {
     border: none;
     font-size: 16px;
-    color:#472809;
+    color: #472809;
     background-color: #FBF6E9;
     outline: none;
     margin-right: 15px;
     margin-left: 18px;
 }
-.icon-menu .fa-cart-shopping{
+
+.icon-menu .fa-cart-shopping {
     border: none;
     font-size: 18px;
-    color:#472809;
+    color: #472809;
     margin: 15px;
 }
+
 /* 導覽列 */
 
-.section-footer{
+.section-footer {
     background-color: #d3be50;
-    padding-top: 60px ;
+    padding-top: 3.90625VW;
     padding-bottom: 10px;
 }
-.category-footer h3{
+
+.category-footer h3 {
     font-size: 18px;
     letter-spacing: 12%;
     padding-bottom: 40px;
-    margin-top:50px ;
+    margin-top: 50px;
     color: #6c3333;
     font-family: "Arima";
 }
-.logo-footer img{
+
+.logo-footer img {
     width: 100px;
 }
+
 .txt-footer {
     text-decoration: none;
     color: #6c3333;
     margin-bottom: 18px;
 }
-.list-footer::before{
+
+.list-footer::before {
     content: '';
     position: relative;
     background-color: #f00;
@@ -122,27 +179,124 @@ li:hover .submenu{
     left: 40px;
     bottom: -10px;
 }
-.list-footer{
-    display: flex;
-    border-top: 2px solid  #6c3333;
-    justify-content: space-between;
-    
+
+.list-footer {
+    display:flex;
+    flex-direction: column;
+    border-top: 2px solid #6c3333;
 }
-.category-footer{
-    margin-right:  40px;
+
+.category-footer {
+    margin-right: 40px;
     white-space: nowrap;
 }
-.txt-footer li{
+
+.txt-footer li {
     padding-bottom: 18px;
     font-family: 'Noto Sans TC';
     font-size: 12px;
 }
-.bootom-footer{
-    margin: 10px 83px;
-}
-.bootom-footer p{
+
+
+
+.bootom-footer p {
     font-family: 'Noto Sans TC';
     padding-bottom: 16px;
     color: #6c3333;
-    font-size: 12px;
+    font-size: 10px;
 }
+@media screen and (min-width:768px) {
+    .hb {
+        display: none;
+    }
+
+    .main-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: fixed;
+
+    }
+
+    .main-nav {
+        display: flex;
+        position: relative;
+        top: auto;
+        left: 0;
+        width: auto;
+        background-color: transparent;
+        height: auto;
+    }
+
+    .main-menu {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .main-menu li {
+        display: block;
+        position: relative;
+        padding: 10px;
+    }
+
+    .main-menu>li>label {
+        display: none;
+    }
+
+    .main-menu>li a {
+        width: auto;
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .sub-menu {
+        position: absolute;
+        background-color: #FBF6E9;
+        max-height: 400px;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 100%;
+    }
+
+    li:hover>.sub-menu {
+        display: block;
+    }
+
+    .icon-menu label {
+        padding: 3px 5px;
+        width: 146px;
+    }
+
+    .icon-menu .fa-user-large {
+        font-size: 16px;
+        margin-right: 15px;
+        margin-left: 18px;
+    }
+
+    .icon-menu .fa-cart-shopping {
+        font-size: 18px;
+        margin: 15px;
+    }
+    .list-footer {
+        display: flex;
+        flex-direction: row;
+        border-top: 2px solid #6c3333;
+        justify-content: space-between;
+    
+    }
+    .bootom-footer {
+        margin: 10px 83px;
+    }
+    
+    .bootom-footer p {
+        font-family: 'Noto Sans TC';
+        padding-bottom: 16px;
+        color: #6c3333;
+        font-size: 12px;
+    }
+    .bootom-footer {
+        text-align: center;
+    }
+}
+

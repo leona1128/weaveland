@@ -1,112 +1,448 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-         * {
-            margin: 0;
-            padding: 0;
-        }
-        .item-list {
-            width: 960px;
-            height: 400px;
-            margin: auto;
-            display: flex;
-            flex-wrap: wrap;
-            flex-direction: column;
-            counter-reset:num;
-        }
-        .item {
-            width: 420px;
-            margin: 10px;
-            position: relative;
-            padding-left: 40px;
-        }
-        .item a {
-            color: #666;
-            text-decoration: none;
-        }
-        .item::before {
-            content: '1';
-            position: absolute;
-            left: 0;
-            top: 0;
-            font-size: 52px;
-            counter-increment:num; 
-            content:counter(num);
-        }
-        .item::after {
-            content: '';
-            position: absolute;
-            height: 2px;
-            background-color: #f00;
-            right: 0;
-            left: 60px;
-            bottom: -10px;
-        }
-    </style>
+    <title>織嶼Weaveland</title>
+    <link rel="stylesheet" href="css/grid-1.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="header.css">
+    <!-- ------------ -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <!-- ------------ -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Arima:wght@100..700&family=Noto+Sans+TC:wght@100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/menu footer.css">
+    <link rel="stylesheet" href="css/header.css">
+    <!-- 書籤 -->
+    <link rel="shortcut icon" href="pic/logo.svg" type="image/x-icon">
+    <link rel="bookmark" href="pic/logo.svg">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 </head>
+
 <body>
-    <div class="item-list">
-        <div class="item">
-            <div class="hashtag">
-                <span>培訓案例</span>
-                <span>學員心得</span>    
+    <div class="section-all">
+
+        <input type="checkbox" name="" id="menu-switch">
+        <header class="main-header">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="pic/logo.png" alt="logo">
+                </a>
             </div>
-            <a href="#">【學員見證】老師用心教學，微軟AZ-104認證考試練習不間斷！</a>
+            <!-------------------------------------------->
+            <label for="menu-switch" class="hb">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <!-------------------------------------------->
+            <nav class="main-nav">
+                <ul class="main-menu">
+                    <li>
+                        <a href="aboutus.html">關於我們</a>
+                    </li>
+                    <li>
+                        <a href="contactus.html">聯絡我們</a>
+                    </li>
+                    <li>
+                        <a href="#">產品分類</a>
+                        <label>
+                            <input type="checkbox" name="" id="">
+                            ▼
+                        </label>
+                        <ul class="sub-menu">
+                            <li>
+                                <a href="product.html">編織花</a>
+                            </li>
+                            <li>
+                                <a href="#">編織小物</a>
+                            </li>
+                            <li>
+                                <a href="#">編織材料</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="diy-class.html">DIY教室</a>
+                    </li>
+                </ul>
+            </nav>
+            <ul class="icon-menu">
+                <label>
+                    <i class="fa-solid fa-magnifying-glass">
+                    </i>
+                    <input type="search">
+                </label>
+                <li class="icon-user">
+                    <a href="login.html"><i class="fa-solid fa-user-large"></i>
+                    </a>
+                </li>
+                <li class="icon-car">
+                    <a href="Member.html">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </a>
+                </li>
+            </ul>
+        </header>
+        <div class="section-banner">
+            <img src="pic/index-banner.png" alt="banner">
+            <h1>一針一勾線 是滿滿的心意</h1>
         </div>
-        <div class="item">
-            <div class="hashtag">
-                <span>培訓案例</span>
-                <span>學員心得</span>    
+        <div class="main-brandstory-header" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="100">
+            <div class="section section-about">
+                <div class=" container container-about">
+                    <div class="pic-about">
+                        <img src="pic/index-about.png" alt="about">
+                        <h2>關於我們</h2>
+                    </div>
+                    <div class="txt-about">
+                        <p>源自對編織花的熱愛和對手工藝的敬重。就像每一朵編織花都經過精心製作，
+                            我們希望將這份用心和美好帶給更多人。<br>
+                            我們致力於打造一個溫馨、優雅的空間，讓顧客感受到家的舒適和生活的美好。<br>
+                            我們不僅追求編織花的精緻和美感，更希望通過手工藝品將溫暖和愛傳遞給每一位顧客。
+                        </p>
+
+                    </div>
+                </div>
             </div>
-            <a href="#">【學員見證】老師用心教學，微軟AZ-104認證考試練習不間斷！</a>
         </div>
-        <div class="item">
-            <div class="hashtag">
-                <span>培訓案例</span>
-                <span>學員心得</span>    
+        <div class="main-brandstory-header" data-aos="fade-up" data-aos-duration="2000">
+            <div class="section section-produt">
+                <div class="container container-produt">
+                    <h2>編織花束</h2>
+                    <div class="card-list owl-carousel owl-theme">
+                        <div class="card item">
+                            <div class="pic-card">
+                                <a href="product-content.html">
+                                    <img src="pic/index-flower3.jpg" alt="flower">
+                            </div>
+                            <div class="txt-card">
+                                <h3>百合花<br>Lily</h3>
+                                <p>NT.1600</p>
+                            </div>
+                            </a>
+                        </div>
+                        <div class="card item">
+                            <div class="pic-card">
+                                <a href="#">
+                                    <img src="pic/index-flower2.jpg" alt="flower">
+                            </div>
+                            <div class="txt-card">
+                                <h3>木槿花<br> Crochet Gumamela</h3>
+                                <p>NT.1800</p>
+                            </div>
+                            </a>
+                        </div>
+                        <div class="card item">
+                            <div class="pic-card">
+                                <a href="">
+                                    <img src="pic/index-flower1.jpg" alt="flower">
+                            </div>
+                            <div class="txt-card">
+                                <h3>漸層玫瑰花束<br> White rose</h3>
+                                <p>NT.2800</p>
+                            </div>
+                            </a>
+                        </div>
+                        <div class="card item">
+                            <div class="pic-card">
+                                <a href="product-content.html">
+                                    <img src="pic/index-flower3.jpg" alt="flower">
+                            </div>
+                            <div class="txt-card">
+                                <h3>百合花<br>Lily</h3>
+                                <p>NT.1600</p>
+                            </div>
+                            </a>
+                        </div>
+                        <div class="card item">
+                            <div class="pic-card">
+                                <a href="#">
+                                    <img src="pic/index-flower2.jpg" alt="flower">
+                            </div>
+                            <div class="txt-card">
+                                <h3>木槿花<br> Crochet Gumamela</h3>
+                                <p>NT.1800</p>
+                            </div>
+                            </a>
+                        </div>
+                        <div class="card item">
+                            <div class="pic-card">
+                                <a href="">
+                                    <img src="pic/index-flower1.jpg" alt="flower">
+                            </div>
+                            <div class="txt-card">
+                                <h3>漸層玫瑰花束<br> White rose</h3>
+                                <p>NT.2800</p>
+                            </div>
+                            </a>
+                        </div>
+                    </div>
+                    <script>
+                        $('.owl-carousel').owlCarousel({
+                            loop: true,
+                            //   margin:10,
+                            nav: true,
+                            dots: true,
+                            responsive: {
+                                0: {
+                                    items: 1
+                                },
+                                600: {
+                                    items: 1
+                                },
+                                1000: {
+                                    items: 3
+                                }
+                            }
+                        })
+                    </script>
+                    <button class="more">
+                        <a href="product.html">More</a>
+                    </button>
+                </div>
             </div>
-            <a href="#">【學員見證】老師用心教學，微軟AZ-104認證考試練習不間斷！</a>
         </div>
-        <div class="item">
-            <div class="hashtag">
-                <span>培訓案例</span>
-                <span>學員心得</span>    
+        <div class="main-brandstory-header" data-aos="fade-right" data-aos-duration="1000">
+            <div class="section-product-banner">
+                <img src="pic/index-banner2.png" alt="banner2">
+                <h2>用溫暖的羊毛線 做出溫暖的物品</h2>
             </div>
-            <a href="#">【學員見證】老師用心教學，微軟AZ-104認證考試練習不間斷！</a>
         </div>
-        <div class="item">
-            <div class="hashtag">
-                <span>培訓案例</span>
-                <span>學員心得</span>    
+        <div class="main-brandstory-header" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="50">
+            <div class="section section-produt">
+                <div class="container container-produt">
+                    <h2>編織小物</h2>
+                    <div class="card-list owl-carousel owl-theme">
+                        <div class="card item">
+                            <div class="pic-card">
+                                <a href="#">
+                                    <img src="pic/index-animal3.jpg" alt="flower">
+                            </div>
+                            <div class="txt-card">
+                                <h3>蝴蝶結瑞比兔</h3>
+                                <p>NT.2400</p>
+                            </div>
+                            </a>
+                        </div>
+                        <div class="card item">
+                            <div class="pic-card">
+                                <a href="#">
+                                    <img src="pic/index-animal2.jpg" alt="flower">
+                            </div>
+                            <div class="txt-card">
+                                <h3>軟綿羊</h3>
+                                <p>NT.3000</p>
+                            </div>
+                            </a>
+                        </div>
+                        <div class="card item">
+                            <div class="pic-card">
+                                <a href="#">
+                                    <img src="pic/index-animal1.jpg" alt="flower">
+                            </div>
+                            <div class="txt-card">
+                                <h3>睡美羊</h3>
+                                <p>NT.3000</p>
+                            </div>
+                            </a>
+                        </div>
+                        <div class="card item">
+                            <div class="pic-card">
+                                <a href="#">
+                                    <img src="pic/index-animal3.jpg" alt="flower">
+                            </div>
+                            <div class="txt-card">
+                                <h3>蝴蝶結瑞比兔</h3>
+                                <p>NT.2400</p>
+                            </div>
+                            </a>
+                        </div>
+                        <div class="card item">
+                            <div class="pic-card">
+                                <a href="#">
+                                    <img src="pic/index-animal2.jpg" alt="flower">
+                            </div>
+                            <div class="txt-card">
+                                <h3>軟綿羊</h3>
+                                <p>NT.3000</p>
+                            </div>
+                            </a>
+                        </div>
+                        <div class="card item">
+                            <div class="pic-card">
+                                <a href="#">
+                                    <img src="pic/index-animal1.jpg" alt="flower">
+                            </div>
+                            <div class="txt-card">
+                                <h3>睡美羊</h3>
+                                <p>NT.3000</p>
+                            </div>
+                            </a>
+                        </div>
+                    </div>
+                    <script>
+                        $('.owl-carousel').owlCarousel({
+                            loop: true,
+                            //   margin:-10,
+                            nav: true,
+                            dots: true,
+                            responsive: {
+                                0: {
+                                    items: 1
+                                },
+                                600: {
+                                    items: 1
+                                },
+                                1000: {
+                                    items: 3
+                                }
+                            }
+                        })
+                    </script>
+                    <button class="more">
+                        <a href="class-reservation.html">More</a>
+                    </button>
+                </div>
             </div>
-            <a href="#">【學員見證】老師用心教學，微軟AZ-104認證考試練習不間斷！</a>
-        </div>
-        <div class="item">
-            <div class="hashtag">
-                <span>培訓案例</span>
-                <span>學員心得</span>    
-            </div>
-            <a href="#">【學員見證】老師用心教學，微軟AZ-104認證考試練習不間斷！</a>
-        </div>
-        <div class="item">
-            <div class="hashtag">
-                <span>培訓案例</span>
-                <span>學員心得</span>    
-            </div>
-            <a href="#">【學員見證】老師用心教學，微軟AZ-104認證考試練習不間斷！</a>
-        </div>
-        <div class="item">
-            <div class="hashtag">
-                <span>培訓案例</span>
-                <span>學員心得</span>    
-            </div>
-            <a href="#">【學員見證】老師用心教學，微軟AZ-104認證考試練習不間斷！</a>
         </div>
     </div>
+    <div class="section section-class">
+        <div class="container container-class">
+            <div class="row">
+                <div class="list-class ">
+                    <h3>課程推薦</h3>
+                    <div class="class">
+                        <div data-aos="fade-up-left" data-aos-duration="1000">
+                            <div class="pic-class">
+                                <img src="pic/class1.png" alt="class">
+                            </div>
+                        </div>
+                        <div class="txt-class">
+                            <section>
+                                歡迎來到我們的DIY編織教室！在這裡，我們提供一個充滿創意和溫馨的空間，讓您可以親身體驗編織的樂趣和技巧。<br>
+                                <br>無論您是初學者還是有經驗的編織愛好者，我們都歡迎您加入我們的課程。<br>
+                                <br>我們的教室設施齊全，配備了各種編織工具和材料，包括鉤針、毛線、緞帶等。我們的專業教師將為您提供專業的指導和個性化的教學，幫助您掌握編織的基礎技巧，並創作出獨一無二的手工藝品。
+                            </section>
+                        </div>
+                    </div>
+                    <div class="class">
+                        <div data-aos="fade-up-right" data-aos-duration="500">
+                            <div class="pic-class">
+                                <img src="pic/class2.png" alt="class">
+                            </div>
+                        </div>
+                        <div class="txt-class">
+                            <section>
+                                在我們的課程中，您將有機會學習到不同的編織技巧和造型<br>
+
+                                <br>無論您是想學習新技能、放鬆身心，還是尋找新的興趣和靈感，我們的DIY編織教室都能滿足您的需求。加入我們，一起開啟編織之旅，感受手作的樂趣和溫暖！<br>
+
+                            </section>
+                        </div>
+                    </div>
+                    <button class="more">
+                        <a href="#">More</a>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <footer>
+        <div class="section-footer">
+            <div class="container container-footer">
+                <div class="logo-footer">
+                    <img src="pic/logo.png" alt="logo">
+                </div>
+                <div class="list-footer">
+                    <div class="category-footer">
+                        <h3>Service</h3>
+                        <ul class="txt-footer">
+                            <li>
+                                服務條款
+                            </li>
+                            <li>
+                                免責聲明
+                            </li>
+                            <li>
+                                隱私權保護
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="category-footer">
+                        <h3>Contact</h3>
+                        <ul class="txt-footer">
+                            <li>
+                                客服電話:(02)1234-1234
+                            </li>
+                            <li>
+                                客服信箱:SERVICE@gmail.com
+                            </li>
+                            <li>
+                                客服時間:09:00~18:00
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="category-footer">
+                        <h3>Find us</h3>
+                        <ul class="txt-footer">
+                            <li>
+                                營業時段: <br>
+
+                            </li>
+                            <li>
+                                星期一~星期六上午10:00-18:00
+                            </li>
+                            <li>
+                                星期天公休
+                            </li>
+                            <li>
+                                公休資訊可查詢官網以及intagram
+                                <i class="fa-brands fa-instagram"></i>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="category-footer">
+                        <h3>Address</h3>
+                        <ul class="txt-footer">
+                            <li>
+                                10445台北市中山區中山北路二段22號5樓
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="bootom-footer">
+                    <p>本網站為緯育TibaMe前端工程師班學員專題作品，本平台僅供學習、展示之用。<br>
+                        <br>資料參考來源: https://www.miknithouse.com/
+                    </p>
+
+                </div>
+            </div>
+        </div>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
+    </footer>
+
 
 </body>
+
 </html>
