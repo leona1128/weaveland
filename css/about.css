@@ -38,3 +38,26 @@
     padding-bottom: 273px;
     text-align: left;
 }
+@media screen and (max-width:767px){
+    .section-about{
+        background-image: url(../pic/background\ image5.png) ;
+        background-size: 800px 500px;
+    }
+    .container-about h1{
+        font-size: 14px;
+    }
+    .container-about p{
+        font-size: 10px;
+    }
+}
+@media screen and (max-width:430px){
+    .section-about{
+        background-image: url(../pic/background\ image5-1.png) ;
+        background-size: 400px;
+        padding-bottom: 200px;
+    }
+    .container-about p{
+        line-height: 20px;
+        padding-bottom: 100px;
+    }
+}

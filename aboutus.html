@@ -27,66 +27,73 @@
 
 <body>
     <div class="section-all">
-        <div class="section-banner">
-            <img src="pic/aboutusbanner.png" alt="banner">
-        </div>
-        <div class="section-menu">
-            <div class="container">
-                <div class="menu">
-                    <div class="logo-menu">
-                        <a href="index.html">
-                            <img src="pic/logo.png" alt="logo">
-                        </a>
-                    </div>
-                    <nav>
-                        <ul class="list-menu">
-                            <li>
-                                <a href="aboutus.html">關於我們</a>
-                            </li>
-                            <li>
-                                <a href="contactus.html">聯絡我們</a>
-                            </li>
-                            <li>
-                                <a href="product.html">產品分類</a>
-                                <ul class="submenu">
-                                    <li>
-                                        <a href="product.html">編織花</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">編織小物</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">編織材料</a>
-                                    </li>
-                                </ul>
 
+        <input type="checkbox" name="" id="menu-switch">
+        <header class="main-header">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="pic/logo.png" alt="logo">
+                </a>
+            </div>
+            <!-------------------------------------------->
+            <label for="menu-switch" class="hb">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <!-------------------------------------------->
+            <nav class="main-nav">
+                <ul class="main-menu">
+                    <li>
+                        <a href="aboutus.html">關於我們</a>
+                    </li>
+                    <li>
+                        <a href="contactus.html">聯絡我們</a>
+                    </li>
+                    <li>
+                        <a href="#">產品分類</a>
+                        <label>
+                            <input type="checkbox" name="" id="">
+                            ▼
+                        </label>
+                        <ul class="sub-menu">
+                            <li>
+                                <a href="product.html">編織花</a>
                             </li>
                             <li>
-                                <a href="diy-class.html">DIY教室</a>
+                                <a href="#">編織小物</a>
+                            </li>
+                            <li>
+                                <a href="#">編織材料</a>
                             </li>
                         </ul>
-                    </nav>
-                    <div class="icon-menu">
-                        <label>
-                            <i class="fa-solid fa-magnifying-glass">
-                            </i>
-                            <input type="search">
-                        </label>
-                        <div class="icon-user">
-                            <a href="login.html"><i class="fa-solid fa-user-large"></i>
-                            </a>
-                        </div>
-                        <div class="icon-car">
-                            <a href="Member.html">
-                                <i class="fa-solid fa-cart-shopping"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+                    </li>
+                    <li>
+                        <a href="diy-class.html">DIY教室</a>
+                    </li>
+                </ul>
+            </nav>
+            <ul class="icon-menu">
+                <label>
+                    <i class="fa-solid fa-magnifying-glass">
+                    </i>
+                    <input type="search">
+                </label>
+                <li class="icon-user">
+                    <a href="login.html"><i class="fa-solid fa-user-large"></i>
+                    </a>
+                </li>
+                <li class="icon-car">
+                    <a href="Member.html">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </a>
+                </li>
+            </ul>
+        </header>
     <!-- 導覽列 -->
+    <div class="section-banner">
+        <img src="pic/aboutusbanner.png" alt="banner">
+    </div>
     <div class="section section-about">
         <div data-aos="fade-down" data-aos-duration="3000" data-aos-offset="200">
             <div class="container container-about">

@@ -1,5 +1,6 @@
 .section-all {
     background-color: #FBF6E9;
+    position: relative;
 }
 
 /* 導覽列 */
@@ -9,7 +10,7 @@
     background-color: #FBF6E9;
     justify-content: space-between;
     align-items: center;
-    position: relative;
+    /* position: relative; */
     width: 100%;
     top: 0;
     left: 0;
