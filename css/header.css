@@ -196,8 +196,11 @@
 
 .pic-class {
     width: 45.0325732%;
+    margin: auto;
 }
-
+.pic-class img{
+    max-width: 100%;
+}
 .list-class h3 {
     text-align: center;
     color: #4a2222;
