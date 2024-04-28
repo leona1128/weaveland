@@ -51,7 +51,7 @@
 .txt-about {
     padding-top: 82px;
     text-align: center;
-    width: 777px;
+    width:64.75%;
     flex-wrap: wrap;
     margin: auto;
 
@@ -62,6 +62,7 @@
     letter-spacing: 12%;
     line-height: 30px;
     font-size: 16px;
+    font-size:  clamp(8px, 1.041666vw, 16px);
     font-family: 'Noto Sans TC';
     color: #6c3333;
 }
@@ -190,16 +191,20 @@
 
 .section-class {
     background-color: #f2e7cb;
+    padding: 0 6.666666%;
+    padding: 5.833333% 0;
 }
 
 
 
 .pic-class {
-    width: 45.0325732%;
+    /* width: 45.0325732%; */
+    /* width: 50%; */
     margin: auto;
 }
 .pic-class img{
     max-width: 100%;
+    height: 100%;
 }
 .list-class h3 {
     text-align: center;
@@ -212,15 +217,16 @@
 
 .list-class .class:nth-child(odd) {
     flex-direction: row-reverse;
-    padding-top: 30px;
+    /* padding-top: 30px; */
 }
 
 .txt-class {
-    width: 54.641693%;
+    /* width: 54.641693%; */
+    /* width: 50%; */
     display: flex;
     justify-content: center;
     align-items: center;
-    /* padding: 0 85px; */
+    padding: 0 85px;
 }
 
 .txt-class section {
@@ -314,10 +320,13 @@
         width: auto;
         padding-top: 0px;
     }
-
+    .pic-class{
+        max-width: 100%;
+    }
     .txt-class {
-        padding: 0 5px;
+        padding: 0 40px;
         box-sizing: border-box;
+        max-width: 100%;
     }
 
     .txt-class section {
@@ -325,7 +334,9 @@
     }
 
     .pic-class img {
-        width: 437px;
+        width: 938px;
+        height: 350px;
+        object-fit: cover;
     }
 
     

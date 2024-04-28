@@ -22,76 +22,102 @@
     <link rel="stylesheet" href="css/prouct.css">
     <link rel="shortcut icon" href="pic/logo.svg" type="image/x-icon">
     <link rel="bookmark" href="pic/logo.svg">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js"></script>
+    <script src="search.js"></script>
+    <script>
+        $(function () {
+                $('#productName').on('input', function(){
+                    searchProduct()
+                })
+                function searchProduct(){
+                    let productName = $('#productName').val()
+                    $('div.card').each(function(){
+                        let item = $(this).attr('data-item')
+                        if(item.indexOf(productName) != -1){
+                            $(this).show()
+                        }else{
+                            $(this).hide()
+                        }
+                    })
+                }
+            })	
 
-
+    </script>
 </head>
 
 <body>
-    <div class="section-all">
-        <div class="section-menu">
-            <div class="container">
-                <div class="menu">
-                    <div class="logo-menu">
-                        <a href="index.html">
-                            <img src="pic/logo.png" alt="logo">
-                        </a>
-                    </div>
-                    <nav>
-                        <ul class="list-menu">
+    <section class="section-all">
+        <input type="checkbox" name="" id="menu-switch">
+        <header class="main-header">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="pic/logo.png" alt="logo">
+                </a>
+            </div>
+            <!-------------------------------------------->
+            <label for="menu-switch" class="hb">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <!-------------------------------------------->
+            <nav class="main-nav">
+                <ul class="main-menu">
+                    <li>
+                        <a href="aboutus.html">關於我們</a>
+                    </li>
+                    <li>
+                        <a href="contactus.html">聯絡我們</a>
+                    </li>
+                    <li>
+                        <a href="#">產品分類</a>
+                        <label>
+                            <input type="checkbox" name="" id="">
+                            ▼
+                        </label>
+                        <ul class="sub-menu">
                             <li>
-                                <a href="aboutus.html">關於我們</a>
+                                <a href="product.html">編織花</a>
                             </li>
                             <li>
-                                <a href="contactus.html">聯絡我們</a>
+                                <a href="#">編織小物</a>
                             </li>
                             <li>
-                                <a href="product.html">產品分類</a>
-                                <ul class="submenu">
-                                    <li>
-                                        <a href="product.html">編織花</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">編織小物</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">編織材料</a>
-                                    </li>
-                                </ul>
-
-                            </li>
-                            <li>
-                                <a href="diy-class.html">DIY教室</a>
+                                <a href="#">編織材料</a>
                             </li>
                         </ul>
-                    </nav>
-                    <div class="icon-menu">
-                        <label>
-                            <i class="fa-solid fa-magnifying-glass">
-                            </i>
-                            <input type="search">
-                        </label>
-                        <div class="icon-user">
-                            <a href="login.html"><i class="fa-solid fa-user-large"></i>
-                            </a>
-                        </div>
-                        <div class="icon-car">
-                            <a href="Member.html">
-                                <i class="fa-solid fa-cart-shopping"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+                    </li>
+                    <li>
+                        <a href="diy-class.html">DIY教室</a>
+                    </li>
+                </ul>
+            </nav>
+            <ul class="icon-menu">
+                <label>
+                    <i class="fa-solid fa-magnifying-glass">
+                    </i>
+                    <input type="search" id="productName" placeholder="搜尋商品">
+                </label>
+                <li class="icon-user">
+                    <a href="login.html"><i class="fa-solid fa-user-large"></i>
+                    </a>
+                </li>
+                <li class="icon-car">
+                    <a href="Member.html">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </a>
+                </li>
+            </ul>
+        </header>
         <!-- 導覽列 -->
-        <div class="section section-product">
+        <section class="section section-product">
             <div class="container container-product">
                 <div class="title-product">
                     <h1>編織花束</h1>
                 </div>
                 <div class="row">
-                    <div class="col-12 col-md-4">
-                        <div class="card">
+                    <div class="col-12 col-md-4 ">
+                        <div class="card" data-item="黃花酢醬草,Sorrel">
                             <div class="pic-card">
                                 <a href="#">
                                     <img src="pic/flows4.png">
@@ -103,14 +129,14 @@
                                         <span>Sorrel</span>
                                     
                                 </div>
-                                <div class="price">
-                                    NT.450
+                                <div class="price" data-price="450">
+                                    <span>NT.450</span> 
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-12 col-md-4">
-                        <div class="card">
+                        <div class="card" data-item="百合花,Lily">
                             <div class="pic-card">
                                 <a href="product-content.html">
                                     <img src="pic/index-flower3.jpg">
@@ -123,13 +149,13 @@
                                     
                                 </div>
                                 <div class="price">
-                                    NT.1600
+                                    <span>NT.1600</span> 
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-12 col-md-4">
-                        <div class="card">
+                        <div class="card" data-item="鬱金香,Tulip">
                             <div class="pic-card">
                                 <a href="#">
                                     <img src="pic/flows5.png">
@@ -142,13 +168,13 @@
                                     
                                 </div>
                                 <div class="price">
-                                    NT.2600
+                                    <span>NT.2600</span> 
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-12 col-md-4">
-                        <div class="card">
+                        <div class="card" data-item="銀鈴花束,Silver bell flower">
                             <div class="pic-card">
                                 <a href="#">
                                     <img src="pic/flows6.png">
@@ -161,13 +187,13 @@
                                     
                                 </div>
                                 <div class="price">
-                                    NT.1200
+                                    <span>NT.1200</span> 
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-12 col-md-4">
-                        <div class="card">
+                        <div class="card" data-item="漸層玫瑰花束,SWhite rose">
                             <div class="pic-card">
                                 <a href="#">
                                     <img src="pic/flows1.png">
@@ -180,13 +206,13 @@
                                     
                                 </div>
                                 <div class="price">
-                                    NT.2800
+                                    <span>NT.2800</span> 
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-12 col-md-4">
-                        <div class="card">
+                        <div class="card"  data-item="紅玫瑰花束,Rose">
                             <div class="pic-card">
                                 <a href="#">
                                     <img src="pic/flows8.png">
@@ -199,13 +225,13 @@
                                     
                                 </div>
                                 <div class="price">
-                                    NT.2800
+                                    <span>NT.2800</span>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-12 col-md-4">
-                        <div class="card">
+                        <div class="card" data-item="木槿花,Crochet Gumamela">
                             <div class="pic-card">
                                 <a href="#">
                                     <img src="pic/flows2.png">
@@ -217,13 +243,13 @@
                                         <span>Crochet Gumamela</span>
                                 </div>
                                 <div class="price">
-                                    NT.1800
+                                    <span>NT.1800</span>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-12 col-md-4">
-                        <div class="card">
+                        <div class="card" data-item="向日葵,Sunflower">
                             <div class="pic-card">
                                 <a href="#">
                                     <img src="pic/flows10.png">
@@ -236,13 +262,13 @@
                                     
                                 </div>
                                 <div class="price">
-                                    NT.3000
+                                    <span>NT.3000</span>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-12 col-md-4">
-                        <div class="card">
+                        <div class="card" data-item="淡雅花束,Elegant bouquet">
                             <div class="pic-card">
                                 <a href="#">
                                     <img src="pic/flows4.png">
@@ -255,7 +281,7 @@
                                     
                                 </div>
                                 <div class="price">
-                                    NT.2100
+                                    <span>NT.2100</span>
                                 </div>
                             </div>
                         </div>
@@ -274,12 +300,12 @@
                 </ul>
             </div>
 
-        </div>
-    </div>
+        </section>
+    </section>
 
 </body>
 <footer>
-    <div class="section-footer">
+    <section class="section-footer">
         <div class="container container-footer">
             <div class="logo-footer">
                 <img src="pic/logo.png" alt="logo">
@@ -348,7 +374,7 @@
 
             </div>
         </div>
-    </div>
+    </section>
 </footer>
 
 </html>

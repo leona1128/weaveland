@@ -113,11 +113,14 @@
     background-color: #FBF6E9;
     border: 1px solid #653c13;
     border-radius: 5px;
-    padding: 3px 5px;
+    padding: 1px 2px;
+    width: 80px;
+    display: flex;
 }
 
 .icon-menu input {
-    width: 30px;
+    /* width: 90px; */
+    /* width: 1.536%; */
     background-color: transparent;
     border: 0;
 }
@@ -195,7 +198,7 @@
 .txt-footer li {
     padding-bottom: 18px;
     font-family: 'Noto Sans TC';
-    font-size: 12px;
+    font-size: clamp(9px,0.78125vw,14px);
 }
 
 
@@ -259,6 +262,10 @@
         transform: translateX(-50%);
         top: 100%;
     }
+    .icon-menu label {
+        border: 1px solid #653c13;
+        width: 100px;
+    }
 
     li:hover>.sub-menu {
         display: block;
@@ -266,7 +273,7 @@
 
     .icon-menu label {
         padding: 3px 5px;
-        width: 146px;
+        /* width: 146px; */
     }
 
     .icon-menu .fa-user-large {
