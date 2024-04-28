@@ -40,9 +40,6 @@
     background-color: #f2e7cb;
     padding: 50px 0;
 }
-/* .container-diy-class{
-    width: 100%;
-} */
 .card-diy-class{
     background-color: #e1d1a6;
     display: flex;
@@ -74,7 +71,6 @@
 .category-card-diy-class{
     font-family: 'Noto Sans TC';
     color: #6c3333;
-    line-height: 18px;
     letter-spacing: 20%;
     line-height: 30px;
     padding-top: 36px;
@@ -109,4 +105,50 @@
     position: relative;
     left: 100px;
     overflow: hidden;
+}
+@media  screen and (max-width:767px){
+    .card-diy-class{
+        background-color: transparent;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 60%;
+        border-radius: 0;
+        padding-bottom: 20px;
+    }
+    .card-diy-class:nth-child(1){
+        right:auto;
+        margin: auto;
+    }
+    .card-diy-class:nth-child(2){
+        left:auto;
+        margin: auto;
+    }
+    .title-card-diy-class{
+        font-size: 14px;
+    }
+    .into-card-diy-class{
+        width: 100%;
+        padding:20px 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .category-card-diy-class{
+        margin-bottom: 20px;
+    }
+    .category-card-diy-class{
+        font-size: 9px;
+    }
+    .pic-card-diy-class img{
+        border-radius: 0;
+    }
+    .button-card-diy-class a{
+        font-size: 12px;
+    }
+    .button-card-diy-class{
+        width: 90px;
+        height: 25px;
+    }
+    
 }
