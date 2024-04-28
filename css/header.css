@@ -343,18 +343,17 @@
 
 }
 
-/* @media screen and (max-width:339px){
-    .pic-class img{
-        width: 50px;
-        height:40px;
-        box-sizing: border-box;
-    }
-    .txt-about p{
-        line-height: 0px;
+@media screen and (max-width:430px){
+.pic-about h2{
+    top:130px;
+    left: 150px;
+    font-size: 12px;
+}
+.section-product-banner h2{
+    top:30px;
+    left: 0;
+    font-size: 12px;
+    letter-spacing: 4px;
 
-    }
-    .txt-about{
-        padding-top: 20px;
-    }
-
-} */
+}
+}
