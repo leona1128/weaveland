@@ -1,6 +1,7 @@
 .section{
     background-color:#fbf6e9;
     margin: auto;
+    overflow: hidden;
 }
 .section-product-content{
     background-image: url(../pic/product-content2.png) ;
@@ -11,14 +12,15 @@
 .container-product-content{
     padding: 200px 0;
     margin: auto;
+    display: flex;
+    justify-content: center;
 }
 .product-content{
     display: flex;
-    margin: auto;
-    align-items: center;
 }
 .pic-product-content{
-    width: 40%;
+    padding-right: 40px;
+    width: 45%;
 }
 .pic-product-content img{
     width: 100%;
@@ -27,15 +29,15 @@
 .into-product-content{
     display: flex;
     flex-direction: column;
-    border-left:1px solid #6c3333 ;
-    padding-left: clamp(5px, 3.90625vw,60px);
-    width: 60%;
+    border-left: 1px solid #6c3333;
+    width: 40%;
+    padding-left: 28px;
 }
 .title-product-content{
     font-family: 'Noto Sans TC';
-    color: #6c3333;
-    font-size: 14px;
-    letter-spacing: 12%;
+    color: #917575;
+    font-size: 12px;
+    letter-spacing: 10px;
     margin-top: 9.765625vw;
     /* 150px */
     margin-bottom: 3.90625VW;
@@ -95,12 +97,54 @@
 .cart-button{
     background-color: #fbf6e9;
     border:1px solid #6c3333;
-    width: 390px;
-    height: 42px;
+    width: 100%;
+    height: 100%;
     margin-bottom: 25px;
     color: #6c3333;
     font-family: 'Noto Sans TC';
     font-size: 20px;
     letter-spacing: 12%;
     border-radius:5px ;
+}
+@media  screen and (max-width:767px){
+    .product-content{
+        flex-direction: column;
+        align-items: center;
+    }
+    .pic-product-content{
+        width: 70%;
+    }
+    .into-product-content{
+        width: 100%;
+        border-left: 0;
+        /* align-items: center; */
+    }
+    .title-product-content h1{
+        font-size: 10px;
+    }
+    .introduce-product-content h2{
+        font-size:18px ;
+        text-align: center;
+    }
+    .introduce-product-content h3{
+        font-size:12px ;
+        text-align: center;
+    }
+    .price-product-content span{
+        font-size:12px ;
+    }
+    .number p{
+        font-size:12px ;
+    }
+    .number input[type="number"]{
+        width: 100px;
+        height: 30px;
+    }
+    .cart-button{
+        font-size:12px ;
+        padding: 8px;
+        /* width: 200px;
+        height: 35px; */
+    }
+
 }
