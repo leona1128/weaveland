@@ -22,6 +22,7 @@
     <link rel="stylesheet" href="css/member.css">
     <link rel="shortcut icon" href="pic/logo.svg" type="image/x-icon">
     <link rel="bookmark" href="pic/logo.svg">
+    <script src="js/member.js"></script>
 
 
 </head>
@@ -90,7 +91,7 @@
                 </li>
             </ul>
         </header>
-        
+
         <!-- 導覽列 -->
         <div class="section section-member">
             <div class="container container-member">
@@ -117,10 +118,10 @@
                             <h2>百合花</h2>
                             <span>Lily</span>
                         </div>
-                        <form id='myform' class="number-member" method='POST' action='#'>
+                        <form id='myform' class="number-member" id="btnMinus0" action='#'>
                             <input type='button' value='-' class='qtyminus' field='quantity' />
-                            <input type='number' name='quantity' value='0' class='qty' - --><input type='button'
-                                value='+' class='qtyplus' field='quantity' />
+                            <input type='text' name='quantity' value='0' class='qty' id="qty0">
+                            <input type='button'value='+' class='qtyplus' id="btnPlus0" />
                         </form>
                         <div class="price-member">
                             <h3>NT.1600</h3>
@@ -134,10 +135,10 @@
                             <h2>木槿花</h2>
                             <span>Crochet Gumamela</span>
                         </div>
-                        <form id='myform' class="number-member" method='POST' action='#'>
+                        <form id='myform' class="number-member"  action='#'>
                             <input type='button' value='-' class='qtyminus' field='quantity' />
-                            <input type='number' name='quantity' value='0' class='qty' - --><input type='button'
-                                value='+' class='qtyplus' field='quantity' />
+                            <input type='text' name='quantity' value='0' class='qty' >
+                            <input type='button'value='+' class='qtyplus'  />
                         </form>
                         <div class="price-member">
                             <h3>NT.1800</h3>
