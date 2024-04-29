@@ -38,7 +38,7 @@
     padding-bottom: 273px;
     text-align: left;
 }
-@media screen and (max-width:767px){
+@media screen and (max-width:768px){
     .section-about{
         background-image: url(../pic/background\ image5.png) ;
         background-size: 800px 500px;

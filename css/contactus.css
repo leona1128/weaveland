@@ -52,7 +52,7 @@
     margin: 20px;
     line-height: 25px;
 }
-@media screen and (max-width:767px){
+@media screen and (max-width:768px){
     .section{
         padding:10px 0;
     }

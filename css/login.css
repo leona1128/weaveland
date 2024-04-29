@@ -105,7 +105,7 @@
     font-size: 24px;
     padding: 21px 40px;
 }
-@media screen and (max-width:767px){
+@media screen and (max-width:768px){
     .section-login{
         background-image: url(../pic/login-2.png) ;
         background-size: contain;

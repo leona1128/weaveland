@@ -106,7 +106,7 @@
     left: 100px;
     overflow: hidden;
 }
-@media  screen and (max-width:767px){
+@media  screen and (max-width:768px){
     .card-diy-class{
         background-color: transparent;
         flex-direction: column;

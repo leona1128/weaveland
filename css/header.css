@@ -242,7 +242,7 @@
     margin-top: 75px;
 }
 
-@media screen and (max-width:767px) {
+@media screen and (max-width:768px) {
     .section-banner {
         margin-top: 20px;
         position: relative;
