@@ -91,7 +91,9 @@
     width: 300px;
     margin: auto;
 }
-
+.pic-card a{
+    text-decoration: none;
+}
 .pic-card img {
     width: 100%;
     vertical-align: middle;
