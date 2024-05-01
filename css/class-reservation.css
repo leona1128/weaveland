@@ -127,6 +127,8 @@
 .function-product-content #time option{
     background-color: #fbf6e9;
     font-size: 14px;
+    font-family: 'Noto Sans TC';
+    color: #6c3333;
 }
 .time-product-content{
     display: flex;
@@ -143,6 +145,7 @@
     align-items: center;
     font-size: 12px;
     width: 15%;
+    color: #6c3333;
 }
 .time-button img{
     width: 11px;
@@ -213,6 +216,15 @@
         height: 35px;
         
     }
+    .time-button{
+        font-size: 9px;
+    }
+    .time-button img{
+        width: 9px;
+        height: 9px;
+        padding: 0px;
+    
+    }
 }
 
 @media screen and (max-width:339px) {
@@ -226,4 +238,13 @@
     .pic-product-content {
         padding-right: 0px;
     }
+    .time-button{
+        font-size: 7px;
+    }
+    /* .time-button img{
+        width: 9px;
+        height: 9px;
+        padding: 0px;
+    
+    } */
 }
