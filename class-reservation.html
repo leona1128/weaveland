@@ -15,6 +15,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.9.1/themes/base/jquery-ui.css" />
+    <script src="http://code.jquery.com/jquery-1.8.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.9.1/jquery-ui.js"></script>
     <link
         href="https://fonts.googleapis.com/css2?family=Arima:wght@100..700&family=Noto+Sans+TC:wght@100..900&display=swap"
         rel="stylesheet">
@@ -120,10 +123,13 @@
                                 <p>數量</p>
                             </div>
                             <label>
-                                <input type="date" placeholder="預約課程" required>
+                                <input type="text" placeholder="預約課程" required id="booking">
                             </label>
                             <label>
-                                <input type="time" placeholder="時段" required>
+                                <select id="time" placeholder="時段" required>
+                                    <option value="上午10:30-11:30">上午10:30-11:30</option>
+                                    <option value="上午12:30-14:30">上午12:30-14:30</option>
+                                </select>
                             </label>
                         </div>
                     </div>
@@ -202,6 +208,11 @@
             </div>
         </div>
     </div>
+    <script>
+        $(function() {
+            $( "#booking" ).datepicker();
+        });
+        </script>
 </footer>
 
 </html>

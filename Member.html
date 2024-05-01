@@ -120,11 +120,12 @@
                         </div>
                         <form id='myform' class="number-member" id="btnMinus0" >
                             <input type='button' value='-' class='qtyminus' field='quantity' />
-                            <input type='text' name='quantity' value='0' class='qty' id="qty0">
+                            <input data-price="1600" data-id="1"
+                            type='text' name='quantity' value='0' class='qty' id="qty0">
                             <input type='button'value='+' class='qtyplus' id="btnPlus0" />
                         </form>
                         <div class="price-member">
-                            <h3>NT.1600</h3>
+                            <h3 id="price-member-1">NT.1600</h3>
                         </div>
                     </div>
                     <div class="card-member">
@@ -137,17 +138,17 @@
                         </div>
                         <form id='myform' class="number-member"  action='#'>
                             <input type='button' value='-' class='qtyminus' field='quantity' />
-                            <input type='text' name='quantity' value='0' class='qty' >
+                            <input data-id="2" data-price="1800" type='text' name='quantity' value='0' class='qty' >
                             <input type='button'value='+' class='qtyplus'  />
                         </form>
                         <div class="price-member">
-                            <h3>NT.1800</h3>
+                            <h3  id="price-member-2">NT.1800</h3>
                         </div>
                     </div>
                 </main>
                 <div class="bottom-member">
                     <h3>總計:</h3>
-                    <span>NT.3400</span>
+                    <span id="total-price">NT.3400</span>
                 </div>
                 <button class="button-member">
                     <a href="#">開始結帳</a>
