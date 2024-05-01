@@ -125,12 +125,18 @@
                             <label>
                                 <input type="text" placeholder="預約課程" required id="booking">
                             </label>
-                            <label>
-                                <select id="time" placeholder="時段" required>
+                            <div class="time-product-content">
+                                <select id="time" placeholder="請選擇時段" required>
+                                    <option value="預約時段">請選擇時段</option>
                                     <option value="上午10:30-11:30">上午10:30-11:30</option>
                                     <option value="上午12:30-14:30">上午12:30-14:30</option>
                                 </select>
-                            </label>
+
+                                <button class="time-button" >
+                                    預約
+                                    <img src="pic/heart_white.png" id="heart" title="加入收藏">
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -209,10 +215,23 @@
         </div>
     </div>
     <script>
-        $(function() {
-            $( "#booking" ).datepicker();
+        $(function () {
+            $("#booking").datepicker();
         });
-        </script>
+    </script>
+    <script>
+        function switchFavorite() {
+            let heart = document.getElementById("heart");
+            if (heart.title === "加入收藏") {
+                heart.src = "pic/heart_red.png";
+                heart.title = "取消收藏";
+            } else {
+                heart.src = "pic/heart_white.png";
+                heart.title = "加入收藏";
+            }return
+        }
+        document.getElementById("heart").onclick = switchFavorite;
+    </script>
 </footer>
 
 </html>

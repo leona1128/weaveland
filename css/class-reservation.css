@@ -111,14 +111,14 @@
 }
 
 .function-product-content input[type="text"] {
-    width: 300px;
+    width: 250px;
     height: 42px;
     text-align: center;
     border-radius: 5px;
 }
 
 .function-product-content #time {
-    width: 300px;
+    width: 250px;
     height: 42px;
     text-align: center;
     border-radius: 5px;
@@ -126,6 +126,33 @@
 }
 .function-product-content #time option{
     background-color: #fbf6e9;
+    font-size: 14px;
+}
+.time-product-content{
+    display: flex;
+}
+.time-button{
+    margin-left: 10px;
+    padding: 5px;
+    background-color: #fbf6e9;
+    border-radius: 5px;
+    border: 1px solid #6c3333;
+    font-family: 'Noto Sans TC';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    width: 15%;
+}
+.time-button img{
+    width: 11px;
+    height: 11px;
+    padding: 2px;
+
+}
+.time-button:hover{
+    background-color:#d66c6c;
+    color:#fbf6e9
 }
 
 @media screen and (max-width:768px) {
