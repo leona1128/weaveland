@@ -100,7 +100,19 @@
                 </li>
             </ul>
         </header>
+        <aside class="aside-section-banner" id="prince">
+            <p>小王子找到了他的玫瑰花，你找到了嗎?</p>
+            <img src="pic/the_little_prince 1.svg" alt="little prince">
+
+            <div class="colse">
+                <span></span>
+                
+            </div>
+
+
+        </aside>
         <section class="section-banner">
+
             <img src="pic/index-banner.png" alt="banner">
             <h1>一針一勾線 是滿滿的心意</h1>
         </section>
@@ -262,7 +274,7 @@
                         <div class="card item">
                             <div class="pic-card">
                                 <a href="#">
-                                    <img src="pic/index-animal1.jpg" alt="flower"> 
+                                    <img src="pic/index-animal1.jpg" alt="flower">
                                 </a>
                             </div>
                             <div class="txt-card">
@@ -449,6 +461,13 @@
             <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
             <script>
                 AOS.init();
+            </script>
+            <script>
+                $(function () {//毫秒
+                    $('#prince').slideDown(1500).click(function () {
+                        $(this).delay(300).slideUp(1500)//先停頓在下來
+                    })
+                })	
             </script>
         </footer>
 

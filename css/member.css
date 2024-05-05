@@ -23,11 +23,11 @@
 
 .txt-member {
     display: flex;
-    width: 90%;
-    /* width: 50%; */
+    /* width: 90%; */
+    width: 50%;
     justify-content: space-between;
     font-family: 'Noto Sans TC';
-    font-size: 16px;
+    font-size: 14px;
     margin-bottom: 10px;
 }
 
@@ -138,8 +138,8 @@ input.qtyminus {
     }
 
     .txt-member {
-        font-size: 16px;
-        /* width:65%; */
+        font-size: 12px;
+        width:65%;
         margin: 0 10px;
     }
 
@@ -169,7 +169,7 @@ input.qtyminus {
     }
     input.qtyplus,
     input.qtyminus {
-        width: 15px;
+        width: 10px;
         height: 25px;
         border: none;
         /* border: 1px solid #fbf6e9; */
