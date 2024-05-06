@@ -32,7 +32,9 @@
     width: 100%;
     vertical-align: middle;
 }
-
+.pic-section-banner{
+    display: none;
+}
 .colse span {
     width: 10px;
     height: 10px;
@@ -316,8 +318,11 @@
         padding: 25px 0;
 
     }
-    .aside-section-banner{
-
+    .pic-md-section-banner{
+        display: none;
+    }
+    .pic-section-banner{
+        display: block;
     }
     .aside-section-banner img{
         width: 45px;

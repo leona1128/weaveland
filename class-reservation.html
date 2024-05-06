@@ -223,11 +223,14 @@
         function switchFavorite() {
             let heart = document.getElementById("heart");
             if (heart.title === "加入收藏") {
+                alert("預約成功!");
                 heart.src = "pic/heart_red.png";
                 heart.title = "取消收藏";
             } else {
+                alert("取消預約");
                 heart.src = "pic/heart_white.png";
                 heart.title = "加入收藏";
+
             }return
         }
         document.getElementById("heart").onclick = switchFavorite;
