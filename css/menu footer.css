@@ -46,25 +46,24 @@
     background-color: #653c13;
 }
 
-#menu-switch:checked~.main-header .main-nav {
-    display: block;
-}
+
 
 .main-nav {
     position: absolute;
     top: 100%;
     width: 80%;
-    height: 100vh;
+    height: 70vh;
     background-color: #FBF6E9;
     display: none;
 }
 
 .main-menu>li {
-    display: flex;
+    
     flex-wrap: wrap;
     display: block;
-    padding: 40px 0;
-    text-align: center;
+    padding: 30px 100px;
+   
+    align-items: center;
     
 }
 
@@ -72,7 +71,7 @@
     width: 0;
     flex-grow: 1;
     text-decoration: none;
-    font-size: 24px;
+    font-size: 16px;
     font-family: 'Noto Sans TC';
     color: #653c13;
 
@@ -92,13 +91,13 @@
 .sub-menu {
     display: none;
     width: 100%;
-    padding: 10px 0;
+    /* padding: 10px 0; */
 }
 .sub-menu li{
-    padding: 10px 0;
+    padding: 20px 0;
 }
 .sub-menu>li a{
-    font-size: 16px;
+    font-size: 14px;
     color: #6c3333;
 }
 .icon-menu {

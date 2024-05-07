@@ -18,7 +18,9 @@
     width: 50px;
     vertical-align: middle;
 }
-
+.pic-section-banner{
+    display: none;
+}
 .aside-section-banner p {
     font-size: 12px;
     font-family: 'Noto Sans TC';
@@ -32,9 +34,7 @@
     width: 100%;
     vertical-align: middle;
 }
-.pic-section-banner{
-    display: none;
-}
+
 .colse span {
     width: 10px;
     height: 10px;
@@ -49,9 +49,9 @@
 
 }
 
-.section-banner h1 {
+.section-banner h1{
     position: absolute;
-    top: 300px;
+    top: 200px;
     left: 300px;
     font-family: 'Noto Sans TC';
     color: #6c3333;
@@ -323,9 +323,12 @@
     }
     .pic-section-banner{
         display: block;
+        
     }
     .aside-section-banner img{
-        width: 45px;
+        width: 35px;
+        position: relative;
+        bottom: -10px;
     }
 
     .section-banner h1 {
