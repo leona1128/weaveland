@@ -423,14 +423,10 @@
 
 
 }
-@media screen and (max-width:390px) {
-    .txt-about{
-        width: 100%;
-    }
-}
+
 @media screen and (max-width:430px) {
     .pic-about h2 {
-        top: 130px;
+        top: 125px;
         left: 150px;
         font-size: 12px;
     }
@@ -440,6 +436,16 @@
         left: 0;
         font-size: 12px;
         letter-spacing: 4px;
+
+    }
+}
+@media screen and (max-width:350px) {
+    .txt-about{
+        width: 100%;
+    }
+    .pic-about h2{
+        top:100px;
+        left:100px;
 
     }
 }
