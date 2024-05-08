@@ -339,7 +339,7 @@
     }
 
     .pic-about h2 {
-        position: absolute;
+        /* position: absolute; */
         top: 250px;
         left: 300px;
         font-family: 'Noto Sans TC';
