@@ -348,9 +348,9 @@
         letter-spacing: 20px;
     }
 
-    .txt-about {
+    .txt-about{
         padding-top: 20px;
-        width: 376px;
+        width:100%;/*376*/
     }
 
     .txt-about p {
@@ -423,7 +423,11 @@
 
 
 }
-
+@media screen and (max-width:390px) {
+    .txt-about{
+        width: 100%;
+    }
+}
 @media screen and (max-width:430px) {
     .pic-about h2 {
         top: 130px;
