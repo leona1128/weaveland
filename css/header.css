@@ -22,7 +22,7 @@
     display: none;
 }
 .aside-section-banner p {
-    font-size: 12px;
+    font-size: 14px;
     font-family: 'Noto Sans TC';
     flex-wrap: nowrap;
     padding: 10px 0;
@@ -159,7 +159,7 @@
     text-align: center;
     line-height: 41px;
     letter-spacing: 12%;
-    font-size: 20px;
+    font-size: 18px;
     font-family: 'Noto Sans TC';
     opacity: 0;
     transition: 0.5s;
@@ -218,7 +218,7 @@
     top: 160px;
     left: 170px;
     font-family: 'Noto Sans TC';
-    font-size: 18px;
+    font-size: 16px;
     letter-spacing: 20px;
 }
 
@@ -244,13 +244,13 @@
 
 .pic-class {
     /* width: 45.0325732%; */
-    /* width: 50%; */
+    width: 50%;
     margin: auto;
 }
 
 .pic-class img {
     max-width: 100%;
-    height: 100%;
+    /* height: 100%; */
 }
 
 .list-class h3 {
@@ -269,7 +269,7 @@
 
 .txt-class {
     /* width: 54.641693%; */
-    /* width: 50%; */
+    width: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -334,17 +334,19 @@
     .section-banner h1 {
         top: 90px;
         left: 30px;
-        font-size: 12px;
+      
         letter-spacing: 10px;
     }
-
+    .list-class h3{
+        margin-bottom: 20px;
+    }
     .pic-about h2 {
         /* position: absolute; */
         top: 250px;
         left: 300px;
         font-family: 'Noto Sans TC';
         color: #6c3333;
-        font-size: 14px;
+       
         letter-spacing: 20px;
     }
 
@@ -355,7 +357,7 @@
 
     .txt-about p {
         line-height: 20px;
-        font-size: 9px;
+        font-size: 16px;
     }
 
     .txt-card {
@@ -365,7 +367,7 @@
         flex-direction: column;
         justify-content: center;
         line-height: 20px;
-        font-size: 12px;
+        font-size: 16px;
         padding: 10px;
         opacity: 1;
         transition: none;
@@ -374,14 +376,14 @@
 
     .txt-class section {
         margin-top: 15px;
-        line-height: 15px;
+       
     }
 
     .section-class {
         background-color: #dfd0a9;
         padding: 15px 0;
     }
-
+  
     .class {
         display: flex;
         flex-direction: column;
@@ -405,18 +407,18 @@
     }
 
     .txt-class {
-        padding: 0 40px;
+        padding: 0 20px;
         box-sizing: border-box;
         max-width: 100%;
     }
 
     .txt-class section {
-        font-size: 10px;
+        font-size: 16px;
     }
 
     .pic-class img {
-        width: 938px;
-        height: 350px;
+        width: 100%;
+        /* height: 350px; */
         object-fit: cover;
     }
 
@@ -428,13 +430,13 @@
     .pic-about h2 {
         top: 125px;
         left: 150px;
-        font-size: 12px;
+        font-size: 16px;
     }
 
     .section-product-banner h2 {
         top: 30px;
         left: 0;
-        font-size: 12px;
+        font-size: 16px;
         letter-spacing: 4px;
 
     }

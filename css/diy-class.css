@@ -15,7 +15,7 @@
     text-align: center;
 }
 .list-diy-introduce{
-    width: 75%;
+    width: 80%;
     margin: auto;
 }
 .txt-card-diy-introduce{
@@ -26,7 +26,7 @@
     text-align: left;
     padding:77px 0 ;
     width: 66.666666%;
-    font-size: 12PX;
+    font-size: 16px;
     margin: auto;
 }
 .pic-card-diy-introduce{
@@ -75,7 +75,7 @@
     line-height: 30px;
     padding-top: 36px;
     flex-grow: 1; 
-    font-size: 12px; 
+    font-size: 16px; 
 }
 .button-card-diy-class{
     width: 150px;
@@ -125,7 +125,7 @@
         margin: auto;
     }
     .title-card-diy-class{
-        font-size: 14px;
+        width: 100%;
     }
     .into-card-diy-class{
         width: 100%;
@@ -137,14 +137,14 @@
     .category-card-diy-class{
         margin-bottom: 20px;
     }
-    .category-card-diy-class{
+    /* .category-card-diy-class{
         font-size: 9px;
-    }
+    } */
     .pic-card-diy-class img{
         border-radius: 0;
     }
     .button-card-diy-class a{
-        font-size: 12px;
+        font-size: 14px;
     }
     .button-card-diy-class{
         width: 90px;

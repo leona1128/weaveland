@@ -62,9 +62,9 @@
 .main-menu>li {
     
     flex-wrap: wrap;
-    display: block;
+    /* display: block; */
     padding: 30px 50px;
-   
+   display: flex;
     align-items: center;
     
 }
@@ -76,7 +76,7 @@
     font-size: 16px;
     font-family: 'Noto Sans TC';
     color: #653c13;
-
+    display: inline-block;
 }
 
 .main-menu>li label:has(input:checked)+.sub-menu {
@@ -93,14 +93,17 @@
 .sub-menu {
     display: none;
     width: 100%;
+    /* display: flex; */
     /* padding: 10px 0; */
 }
 .sub-menu li{
     padding: 10px 0;
+    display: flex;
 }
 .sub-menu>li a{
     font-size: 14px;
     color: #6c3333;
+    display: inline-block;
 }
 .icon-menu {
     display: flex;
@@ -252,6 +255,7 @@
         width: auto;
         padding: 10px;
         font-size: 14px;
+       
     }
 
     .sub-menu {
